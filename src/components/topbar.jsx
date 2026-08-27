@@ -12,9 +12,9 @@ function Topbar() {
 
         <nav className="nav">
           <Link to="/">Home</Link>
-          <Link to="/sobrenos">Sobre Nós</Link>
+          <Link to="/sobrenos">About Us</Link>
           <Link to="/menu">Menu</Link>
-          <Link to="/contact">Como Chegar</Link>
+          <Link to="/contact">Contact</Link>
         </nav>
       </div>
     </header>
