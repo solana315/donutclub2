@@ -1,5 +1,6 @@
 import Footer from './components/footer'
 import Topbar from './components/topbar'
+import mapsDonutClub from './assets/mapsDonutClub.png'
 
 function Contact() {
   return (
@@ -11,19 +12,38 @@ function Contact() {
 
         <section style={{ maxWidth: 720 }}>
           <h2>Morada</h2>
-          <p>Centro de Viseu, 3100-550 Viseu, Portugal</p>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '48px' }}>
+            <p style={{
+              margin: 0,
+              flex: '0 0 260px',
+              fontSize: '1.1rem',
+              lineHeight: 1.6,
+              color: '#333',
+            }}>
+              Centro de Viseu, 3100-550 Viseu, Portugal
+            </p>
 
-          <h2>Como Chegar</h2>
-          <p>
-            Estamos no centro da cidade. Segue por GPS ou abre o mapa: <a href="https://www.google.com/maps" target="_blank" rel="noreferrer">Ver no mapa</a>.
-          </p>
+            <img
+              src={mapsDonutClub}
+              alt="Mapa com a localização"
+              style={{
+                width: '600px',
+                maxWidth: '100%',
+                height: 'auto',
+                borderRadius: '8px',
+                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.12)',
+                flexShrink: 0,
+              }}
+            />
+          </div>
+
 
           <h2>Telefone & Email</h2>
           <p>Telefone: +351 912 345 678</p>
           <p>Email: hello@donutclub.pt</p>
 
           <h2>Horário</h2>
-          <p>Segunda — Sábado: 08:00 — 20:00</p>
+          <p>Segunda — Sábado: 08:00 — 19:00</p>
         </section>
       </main>
 
